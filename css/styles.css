@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  width: 1440px;
 }
 a {
   text-decoration: none;
@@ -9,15 +10,54 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
-.hidden-text {  
-  overflow: hidden;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  /* padding: 0; */
+}
+
+.hidden-text {
+  display: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 /* Header */
-header {
+.header-page {
   background-color: #ffffff;
+  width: 100%;
+}
+
+.header-page .container {
+  display: flex;
+  flex-direction: row;
+  gap: 332px;
+  padding: 24px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
 }
 
 /* Logo */
@@ -36,6 +76,12 @@ header {
 }
 
 /* Menu */
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .menu-item-link {
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
   font-size: 16px;
@@ -45,16 +91,22 @@ header {
 }
 
 .menu-item-link:hover {
-  color: #404bbf;  
+  color: #404bbf;
 }
 
 .menu-item-link:focus {
-  color: #404bbf;  
+  color: #404bbf;
 }
 
 /* Contacts */
 .contacts {
   font-style: normal;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .contact-link {
@@ -70,11 +122,21 @@ header {
 }
 
 /* Main */
-
 /* Section 1 - About firm */
 .section-about {
   background-color: #2e2f42;
+  width: 100%;
 }
+
+.section-about .container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
 .section-about-header {
   font-size: 56px;
   font-weight: 700;
@@ -82,6 +144,8 @@ header {
   letter-spacing: 1.12px;
   color: #fff;
   text-align: center;
+  width: 496px;
+  height: 120px;
 }
 
 .button-order {
@@ -92,7 +156,14 @@ header {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.64px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  gap: 10px;
+  display: inline-flex;
+  align-items: flex-start;
 }
+
 .button-order:hover,
 .button-order:focus {
   background-color: #404bbf;
@@ -100,8 +171,23 @@ header {
 
 /* Section 2 - Features */
 
-.section-features-header {
-  color: #fff;
+.section-features {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 120px 0px;
+}
+
+.feature-card {
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .feature-title {
@@ -121,8 +207,19 @@ header {
 
 /* Section 3 - Team */
 .section-team {
-  background: #f4f4fd;
+  background-color: #f4f4fd;
 }
+
+.section-team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  padding: 120px 0px;
+  width: 100%;
+}
+
 .section-team-header {
   font-size: 36px;
   font-weight: 700;
@@ -132,9 +229,30 @@ header {
   text-align: center;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
 }
+.team {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 .team-card {
   background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  gap: 32px;
+  padding-bottom: 0px;
 }
+
+.team-card-content {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
 .team-card-name {
   font-size: 20px;
   font-weight: 500;
@@ -153,7 +271,18 @@ header {
 /* Section Portfolio */
 .section-portfolio {
   background-color: #fff;
+  width: 100%;
 }
+
+.section-portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  padding: 120px 0px;
+}
+
 .section-portfolio-header {
   font-size: 36px;
   font-weight: 700;
@@ -163,6 +292,34 @@ header {
   text-align: center;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
 }
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+}
+.portfolio-card {
+  width: 360px;
+  height: 420px;
+  flex-direction: column;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  padding: 0px;
+}
+
+.portfolio-card-content {
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  /* align-self: stretch; */
+}
+
 .portfolio-item-name {
   font-size: 20px;
   font-weight: 500;
@@ -170,6 +327,7 @@ header {
   letter-spacing: 0.4px;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
 }
+
 .portfolio-item-type {
   color: #434455;
   font-size: 16px;
@@ -180,6 +338,10 @@ header {
 /* Footer */
 .footer-page {
   background: #2e2f42;
+  width: 100%;
+}
+.footer-page .container {
+  padding: 100px 0px;
 }
 
 .footer-logo-accent {
@@ -192,4 +354,5 @@ header {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: #f4f4fd;
+  width: 264px;
 }
