@@ -67,7 +67,7 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em; /* 0.54px;*/
   text-transform: uppercase;
   color: #4d5ae5; /*var(--iris, #4D5AE5); */
 }
@@ -88,7 +88,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /*0.32px;*/
 }
 
 .menu-item-link:hover {
@@ -114,7 +114,7 @@ img {
   font-size: 16px;
   color: #434455; /* var(--slate, #434455); */
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /* 0.32px; */
 }
 
 .contact-link:hover,
@@ -142,7 +142,7 @@ img {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em; /* 1.12px; */
   color: #fff;
   text-align: center;
   width: 496px;
@@ -155,7 +155,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em; /* 0.64px; */
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
@@ -193,14 +193,14 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em; /* 0.4px; */
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
 }
 
 .feature-text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /* 0.32px;*/
   color: #434455;
 }
 
@@ -215,7 +215,7 @@ img {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em; /* 0.72px;*/
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
@@ -246,7 +246,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em; /* 0.4px;*/
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
   text-align: center;
   margin: 32px 0px 8px 0px;
@@ -255,7 +255,7 @@ img {
 .team-card-position {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /*0.32px;*/
   text-align: center;
   color: #434455;
   margin-bottom: 32px;
@@ -272,7 +272,7 @@ img {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em; /* 0.72px;*/
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
@@ -302,7 +302,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em; /*0.4px;*/
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
   margin-top: 32px;
   margin-bottom: 8px;
@@ -312,7 +312,7 @@ img {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /* 0.32px;*/
   margin: 0px 0 32px 0;
   margin-bottom: 32px;
 }
@@ -320,7 +320,6 @@ img {
 /* Footer */
 .footer-page {
   background: #2e2f42;
-  /* width: 100%; */
   margin: 0px;
   padding: 100px 0px;
 }
@@ -333,7 +332,7 @@ img {
 .footer-logo-text {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em; /* 0.32px;*/
   color: #f4f4fd;
   width: 264px;
   margin-top: 18px;
