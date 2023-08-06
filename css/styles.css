@@ -31,20 +31,15 @@ img {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
 }
 
 .container {
-  width: 1158px;
-  padding: 0px 15px;
+  width: 1158px;  
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Header */
@@ -77,11 +72,11 @@ img {
   letter-spacing: 0.03em; /* 0.54px;*/
   text-transform: uppercase;
   color: #4d5ae5; /*var(--iris, #4D5AE5); */
+  margin-right: 76px;
 }
 
 .header-logo-accent {
-  color: #2e2f42; /*var(--navyblue, #2E2F42);*/
-  margin-right: 76px;
+  color: #2e2f42; /*var(--navyblue, #2E2F42);*/  
 }
 
 /* Menu */
@@ -193,13 +188,12 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .feature-card {
-  width: 264px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  /* width: 264px;  */
+  width: calc((100% - 24px) / 3);
 }
 
 .feature-title {
