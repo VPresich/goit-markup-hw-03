@@ -31,15 +31,21 @@ img {
 
 .visually-hidden {
   position: absolute;
-  left: -9999px;
-  top: -9999px;
-  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-  width: 1158px;  
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; /for scrollbar/
 }
 
 /* Header */
@@ -52,8 +58,8 @@ img {
 .header-page .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 332px;
-  padding: 24px 0;
 }
 
 .navigation {
@@ -76,17 +82,19 @@ img {
 }
 
 .header-logo-accent {
-  color: #2e2f42; /*var(--navyblue, #2E2F42);*/  
+  color: #2e2f42; /*var(--navyblue, #2E2F42);*/
 }
 
 /* Menu */
 .menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 40px;
 }
 
 .menu-item-link {
+  display: block;
   color: #2e2f42; /*var(--navyblue, #2E2F42);*/
   font-size: 16px;
   font-weight: 500;
